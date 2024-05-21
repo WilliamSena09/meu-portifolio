@@ -1,0 +1,417 @@
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color:#202030;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    margin: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    background-color: #f2d466;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ffd000;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    margin: 100px;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #f2d466;
+}
+
+/* Estilo Cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+
+
+header a{
+    color: #7c7c7c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: 200px;
+    bottom: 100px;
+    
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 30px 50px;
+}
+
+/* INICIOTOPO */
+section.topo{
+    padding: 40px 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.topo h1{
+    color: #fff;
+    font-size: 60px;
+    line-height: 40px;
+}
+
+.topo .txt-topo p{
+    font-size: 18px;
+    color: #fff;
+    margin: 40px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.topo .img-topo img{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    left: 100px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* INICIOESPCIALIDADES */
+section .especialidades{
+    padding: 40px 4%;
+}
+section.especialidades .flex{
+    gap: 50px;
+}
+
+.especialidades .especialidades-box{
+
+    color: #fff;
+    padding: 70px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1);
+    box-shadow: 0 0 20px #cbb8ff;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 100px;
+}
+.especialidades .especialidades-box h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* INICIOSOBRE */
+section.sobre{
+    margin: 300px;
+    padding: 40px 4%;
+}
+
+section .img-sobre img{
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 100px;
+}
+section .img-sobre img:hover{
+    transform: scale(1);
+    box-shadow: 0 0 20px #cbb8ff;
+}
+
+section .sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+
+}
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+}
+.sobre .txt-sobre h2 span{
+    display: block;
+    color: #f2d466;
+
+}
+
+.sobre .txt-sobre p{
+    font-size: 18px;
+    color: #fff;
+    margin: 40px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f2d466;
+    font-size: 0px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/* INICIOPORT */
+
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff11;
+
+    
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    
+    
+    
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #f2d466;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0b01b6;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+section a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* FORMULARIO */
+
+section.formulario{
+    padding: 80px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #333232;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #f2d466;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* portifolio SAPABAP */
+
+section .img-sap img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* thanks page */
+
+@media screen and (max-width: 1020px){  
+    /* clases gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo .flex{
+        flex-direction: column-reverse;
+    }
+    
+    
+    /* cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    /* topo do site */
+    section.topo{
+        padding: 20px 8%;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    .topo .img-topo img{
+        width: 0 auto;
+        left: 20px;
+    }
+
+    section.topo .flex{
+        gap: 40px;
+    }
+
+    .topo h1{
+        font-size: 30px;
+    }
+
+    h2.titulo{
+        margin: 20px;
+        font-size: 35px;
+        line-height: 30px;
+        padding: 50px 0%;
+        
+        
+    }
+
+    section.especialidades{
+        padding: 30px 10%;
+    }
+
+    section.sobre{
+        margin: 10px;
+        padding: 10%;
+    }
+
+    section .img-sobre img{
+        margin-top: 200px;
+        padding: 20%;
+        width: 0 auto;
+    }
+
+    .sobre .txt-sobre p{
+        line-height: 20px;
+        word-spacing: normal;        
+    }
+/* portifolio */
+
+ 
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portifolio .flex{
+        gap: 60px;
+    }
+
+}
