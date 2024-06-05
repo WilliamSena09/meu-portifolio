@@ -229,6 +229,8 @@ section.portifolio{
 
 section.portifolio .flex{
     justify-content: space-around;
+    gap: 30px;
+ 
     
     
     
